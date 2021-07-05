@@ -60,7 +60,7 @@ class ChartWeb extends Component {
     }
 
     // used to resize on orientation of display
-    reRenderWebView(e) {
+    reRenderWebView = (e) => {
         this.setState({
             height: e.nativeEvent.layout.height,
             width: e.nativeEvent.layout.width,
@@ -79,7 +79,8 @@ class ChartWeb extends Component {
         return (
           <View style={this.props.style}>
               <WebView
-                  onLayout={this.reRenderWebView.bind(this)}
+                  originWhitelist={["file://"]}
+                  onLayout={this.reRenderWebView}
                   style={styles.full}
                   source={{ html: concatHTML, baseUrl: 'web/' }}
                   javaScriptEnabled={true}
