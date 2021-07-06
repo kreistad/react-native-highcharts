@@ -33,6 +33,7 @@ class ChartWeb extends Component {
                     <head>
                         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
                         <script src="https://code.highcharts.com/highcharts.js"></script>
+                        <script src="https://code.highcharts.com/highcharts-more.js"></script>
                         <script src="https://code.highcharts.com/modules/sankey.js"></script>
                         <script src="https://code.highcharts.com/modules/organization.js"></script>
                         <script src="https://code.highcharts.com/modules/exporting.js"></script>
